@@ -1,0 +1,31 @@
+{
+  "name": "northrook/highlight",
+  "description": "Server-side code highlighting",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin",
+      "email": "mn@northrook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Support\\": "src"
+    }
+  },
+  "scripts": {
+    "phpstan": "@php vendor/bin/phpstan analyse"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.3",
+    "northrook/support": "dev-main",
+    "tempest/highlight": "@stable"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "@stable",
+    "northrook/dev-env": "dev-main"
+  }
+}
