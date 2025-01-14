@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Support;
 
-use Tempest\Highlight\{Highlighter, Language, Languages\Css\CssLanguage, Languages\Php\PhpLanguage};
-use Stringable;
-use Tempest\Highlight\Languages\Html\HtmlLanguage;
-use Tempest\Highlight\Languages\Text\TextLanguage;
-use ValueError;
+use Tempest\Highlight\{Highlighter, Language};
+use Tempest\Highlight\Languages\{
+    Css\CssLanguage,
+    Html\HtmlLanguage,
+    Php\PhpLanguage,
+    Text\TextLanguage
+};
+use Stringable, ValueError;
 
 final class Highlight implements Stringable
 {
