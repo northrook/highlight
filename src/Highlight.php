@@ -82,6 +82,10 @@ final class Highlight implements Stringable
             return true;
         }
 
+        if ( \preg_match( '/^\h*[a-zA-Z].+:.+/m', $this->source ) ) {
+            return true;
+        }
+
         return (bool) \preg_match( '/^\h*[a-zA-Z].+:.+;/m', $this->source );
     }
 
